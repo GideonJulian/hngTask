@@ -1,0 +1,114 @@
+#product-section {
+  width: 100%;
+}
+#product-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#product-section .container .search-section {
+  position: relative;
+}
+#product-section .container .search-section input {
+  height: 30px;
+  padding-left: 10px;
+  width: 450px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#product-section .container .search-section span {
+  position: absolute;
+  top: 18px;
+  right: 53%;
+}
+#product-section .container .product-container div.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 0.15fr);
+  gap: 30px;
+  margin-right:230px;
+}
+
+#product-section .container .product-container .card {
+  width: 230px;
+  height: 300px;
+  border: 1px solid rgba(223, 200, 101, 1);
+  /* border-radius: 0px, 24px, 0px, 24px;
+   */
+   border-top-right-radius: 0;
+   border-top-left-radius: 24px;
+   border-bottom-right-radius: 24px;
+}
+
+#product-section .container .product-container .card .img-card {
+  width: 100%;
+  height: 200px;
+}
+#product-section .container .product-container .card .img-card img {
+  width: 100%;
+  border-top-left-radius: 24px;
+  height: 100%;
+}
+
+#product-section .container .product-container .card .desc {
+  background-color: rgba(247, 245, 239, 1);
+  height: 95px;
+  width: 100%;
+  border-bottom-right-radius: 24px;
+}
+#product-section .container .product-container .card .desc  h3{
+    font-weight: 400;
+    display: inline-block;
+    margin: 30px 20px ;
+    margin-bottom: 0;
+}
+#product-section .container .product-container .card .desc  h2{
+    font-size: 20px;
+    margin: 10px 20px;
+}
+#product-section .container .product-container .card .desc div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#product-section .container .product-container .card .desc div span {
+    display: flex;
+    align-items: center;
+margin-right: 25px;
+}
+#product-section .container .product-container .card .desc div span :nth-child(1){
+    color: rgba(235, 182, 81, 1);
+    margin-top: -5px;
+}
+
+@media screen and (max-width: 700px) {
+
+    #product-section .container {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    #product-section .container .product-container div.product-wrapper {
+        margin-right: 10px;
+        grid-template-columns: repeat(2, 0.15fr);
+        place-content: 
+        center;
+        gap: 10px;
+    }
+    #product-section .container .product-container .card{
+      width: 180px;
+      height: 310px;
+    }
+    #product-section .container .product-container .card .desc {
+      height: 102px;
+    }
+    #product-section .container .search-section input{
+      width: 360px;
+      margin: 10px auto;
+    }
+    #product-section .container .search-section span {
+      right: 5%;
+    }
+}

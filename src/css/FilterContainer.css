@@ -1,0 +1,35 @@
+.filter-container {
+  padding: 0.5rem;
+  width: 300px;
+  /* position: fixed; */
+  top: 37%;
+  height: 100vh;
+  margin-left: 40px;
+}
+.filter-container ul li {
+  padding: 10px 80px 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.6s;
+}
+.filter-container ul li.active {
+  background: rgba(223, 200, 101, 1);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .filter-container {
+    padding: 0.1rem;
+    margin-right: 42px;
+    height: auto;
+  }
+  .filter-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter-container ul li {
+    padding: 10px 7px 10px 10px;
+    font-size: 16px;
+  }
+}
