@@ -138,9 +138,9 @@ footer .bottom {
   height: 50px;
 }
 @media screen and (max-width: 700px) {
-  #head-section .container ul {
+  /* #head-section .container ul {
     display: none;
-  }
+  } */
   #head-section .container .logo {
     margin-left: -15px;
   }
@@ -169,4 +169,19 @@ footer .bottom {
     margin: 0 10px;
 
   }
+  footer .footer-top p{
+   font-size: 18px;
+   width: 320px;
+  }
+  
+#head-section .container .head-icons{
+  display: none;
+}
+#head-section .container ul li{
+  padding: 0 10px;
+
+}
+#head-section .container ul {
+  margin-left: -40px;
+}
 }

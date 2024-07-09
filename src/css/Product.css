@@ -98,17 +98,23 @@ margin-right: 25px;
         gap: 10px;
     }
     #product-section .container .product-container .card{
-      width: 180px;
+      width: 160px;
       height: 310px;
     }
     #product-section .container .product-container .card .desc {
       height: 102px;
     }
     #product-section .container .search-section input{
-      width: 360px;
+      width: 320px;
       margin: 10px auto;
     }
     #product-section .container .search-section span {
       right: 5%;
+    }
+    #product-section .container .product-container .card .desc h3 {
+      margin: 10px;
+    }
+    #product-section .container .product-container .card .desc h2{
+      margin: 10px;
     }
 }
