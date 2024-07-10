@@ -129,7 +129,7 @@ const Cart = () => {
                 </h4>
                 <h3>$100,010</h3>
             </div>
-            <Link className="checkout" to={'checkout'}>
+            <Link className="checkout" to={'/checkout'}>
                 Checkout
             </Link>
             <Link className="continue"  to={'/'}>Continue Shopping</Link>
