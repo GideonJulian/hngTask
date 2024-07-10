@@ -96,25 +96,29 @@
   border-radius: 10px;
   margin: 10px 0;
 }
-#cart-section .container .right button.checkout {
+#cart-section .container .right a.checkout {
   background-color: rgba(197, 155, 45, 1);
   border: none;
   color: white;
   padding: 1.5rem;
-  width: 300px;
+  width: 250px;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 8px;
   font-size: 18px;
+  display: inline-block;
+  text-align: center;
 }
-#cart-section .container .right button.continue {
+#cart-section .container .right a.continue {
   border: 1px solid rgba(197, 155, 45, 1);
   color: rgba(197, 155, 45, 1);
   font-size: 18px;
   padding: 1.5rem;
-  width: 300px;
+  width: 250px;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 8px;
   margin-top: 10px;
+  display: inline-block;
+  text-align: center;
 }
 #cart-section .container .right p {
   text-align: center;

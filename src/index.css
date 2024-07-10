@@ -138,11 +138,18 @@ footer .bottom {
   height: 50px;
 }
 @media screen and (max-width: 700px) {
-  /* #head-section .container ul {
-    display: none;
-  } */
+  #head-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  #head-section .container ul {
+    display: flex;
+  }
+
   #head-section .container .logo {
-    margin-left: -15px;
+    margin-left: 15px;
   }
   #head-section .container .head-icons {
     margin-right: 6px;
@@ -178,10 +185,13 @@ footer .bottom {
   display: none;
 }
 #head-section .container ul li{
-  padding: 0 10px;
+  padding: 0 5px;
 
 }
 #head-section .container ul {
-  margin-left: -40px;
+  margin-left: -90px;
+}
+#head-section .container .logo{
+
 }
 }

@@ -5,6 +5,7 @@ import img2 from "../assets/images/image 8.png";
 import img3 from "../assets/images/image 12.png";
 import img4 from "../assets/images/image 11.png";
 import img5 from "../assets/images/image 13.png";
+import { Link } from "react-router-dom";
 import { FaTrash } from "react-icons/fa6";
 const Cart = () => {
   return (
@@ -128,10 +129,10 @@ const Cart = () => {
                 </h4>
                 <h3>$100,010</h3>
             </div>
-            <button className="checkout">
+            <Link className="checkout" to={'checkout'}>
                 Checkout
-            </button>
-            <button className="continue">Continue Shopping</button>
+            </Link>
+            <Link className="continue"  to={'/'}>Continue Shopping</Link>
             <p>
             Upon clicking Place Order. I confirm, I have read and knowledge all the terms and police
             </p>

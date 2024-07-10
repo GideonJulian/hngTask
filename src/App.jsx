@@ -3,26 +3,29 @@ import Layouts from "./Layouts/Layouts";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
-const router = createBrowserRouter ([
+import Checkout from "./pages/Checkout";
+const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layouts />,
-    children : [
+    children: [
       {
         index: true,
         element: <Shop />,
       },
 
       {
-        path: 'cart',
-        element: <
-        Cart />,
+        path: "cart",
+        element: <Cart />,
       },
-
-    ]
-  }
-])
+      {
+        path: "checkout",
+        element: <Checkout />,
+      },
+    ],
+  },
+]);
 const App = () => {
   return <RouterProvider router={router} />;
 };
-export default App
+export default App;

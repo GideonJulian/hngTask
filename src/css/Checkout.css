@@ -1,0 +1,117 @@
+#checkout-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#checkout-section .container .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+#checkout-section .container .right select {
+  width: 380px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(189, 189, 189, 1);
+}
+#checkout-section .container .right .card-select {
+  width: 350px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+#checkout-section .container .right .card-select h3 {
+  font-weight: 400;
+}
+#checkout-section .container .right .card-select div.banks {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  margin-top: 10px;
+}
+#checkout-section .container .right .card-select div.banks input {
+  float: right;
+}
+#checkout-section .container .right .card-select div.banks span {
+  margin-left: 50px;
+}
+#checkout-section .container .right .card-select .add-card {
+  display: flex;
+  margin-top: 10px;
+}
+#checkout-section .container .right .card-select .add-card span {
+  margin-top: 7px;
+  margin-left: 7px;
+}
+#checkout-section .container .right button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  background: none;
+  cursor: pointer;
+}
+#checkout-section .container .right button span {
+  margin-top: 2px;
+  margin-left: 7px;
+}
+#checkout-section .container .right h2.address {
+  display: block;
+  margin-left: -280px;
+  font-weight: 400;
+}
+#checkout-section .container .left {
+  background-color: rgba(247, 247, 246, 1);
+  width: 300px;
+  padding: 1rem;
+  height: 250px;
+  margin-top: -160px;
+}
+#checkout-section .container .left h3 {
+    font-weight: 400;
+}
+#checkout-section .container .left div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    background-color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#checkout-section .container .left  a {
+    background-color:rgba(197, 155, 45, 1);
+    border: none;
+    color: white;
+    padding: .7rem;
+    width: 280px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+#checkout-section     .container {
+        flex-direction: column;
+    }
+  #checkout-section   .container .right select{
+        width: 340px;
+    }
+ #checkout-section    .container .right .card-select{
+        width: 310px;
+    }
+ #checkout-section    .container .right button{
+        width: 350px;
+    }
+}
